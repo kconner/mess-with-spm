@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug CLINotes",
+            "program": "${workspaceFolder:CLINotes}/.build/debug/CLINotes",
+            "args": "write --file abc notenote",
+            "cwd": "${workspaceFolder:CLINotes}",
+            "preLaunchTask": "swift: Build Debug CLINotes"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release CLINotes",
+            "program": "${workspaceFolder:CLINotes}/.build/release/CLINotes",
+            "args": [],
+            "cwd": "${workspaceFolder:CLINotes}",
+            "preLaunchTask": "swift: Build Release CLINotes"
+        }
+    ]
+}
